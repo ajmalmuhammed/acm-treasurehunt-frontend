@@ -36,6 +36,9 @@
 </head>
 
 <body>
+  <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
 
   <!--==========================
     Header
@@ -226,6 +229,14 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
+   <script>
+
+  $(window).load(function() {
+    // Animate loader off screen
+    $(".loader-wrapper").fadeOut("slow");;
+  });
+  </script>
 
 </body>
 </html>
