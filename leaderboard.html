@@ -28,16 +28,16 @@
   <link href="css/style.css" rel="stylesheet">
 
 
-  <!-- =======================================================
-    Theme Name: BizPage
-    Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
+ 
 </head>
 
-<body>
-  <span class="loader"><span class="loader-inner"></span></span>
+<body onload="myFunction()">
+
+<div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+   
   <!--==========================
     Header
   ============================-->
@@ -89,7 +89,9 @@
                 </div>
               </section>
             </section>
-</body>
+
+
+
  <!--==========================
     Table
   ============================-->
@@ -144,6 +146,16 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+   <script>
+    function myFunction(){
+      $('.loader-wrapper').hide();
+    };
+  </script>
+  <script>
 
+     $(window).load(function() {
+     
+  });
+</script>
 </body>
 </html>
