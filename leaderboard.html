@@ -26,6 +26,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+ 
 
 
  
@@ -148,11 +149,14 @@
   <script src="js/main.js"></script>
    <script>
 
-    function myFunction(){
-       setTimeout(function() {
-    }, 5500);
-      $('.loader-wrapper').hide();
-    };
+ 
+
+//paste this code under the head tag or in a separate js file.
+  // Wait for window load
+  $(window).load(function() {
+    // Animate loader off screen
+    $(".loader-wrapper").fadeOut("slow");;
+  });
   </script>
   
 </body>
